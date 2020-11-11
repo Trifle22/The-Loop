@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+$montserrat : 'Montserrat';
+$roboto : 'Roboto';
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  background-color: #f9f6f1;
+  padding-top: 56px;
+  padding-bottom: 87px;
+  font-family: $montserrat;
+}
+.content {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+// выпадающее меню
+.header__dropdowns {
+  display: flex;
+  align-items: center;
+}
+.header__dropdown {
+  margin-right: 35px;
+  position: relative;
+  font-family: $montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  padding: 5px;
+
+  &:hover {
+    .dropdown__content {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+  }
+}
+.dropdown__content {
+  display: none;
+  position: absolute;
+  left: 0;
+  margin: 0;
+  transition: all 1s ease-in-out;
+  width: 100%;
+  background-color: transparent;
+
+  a {
+    padding: 5px;
+    background-color: transparent;
+  }
+}
+
+// выпадающее меню конец
+
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 20px;
+  }
+  h1 {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #212121;
+  }
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  .header__menu__link {
+    margin-right: 35px;
+    font-size: 14px;
+    line-height: 17px;
+    transition: all 0.3s ease-in-out;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background-color: #d7b399;
+      padding: 5px;
+      border-radius: 10px;
+    }
+  }
+}
+.header__bag {
+  display: flex;
+  align-items: center;
+
+  .header__bag__count {
+    width: 45px;
+    height: 17px;
+    background-color: transparent;
+    background-image: url(../img/bag-count-bgr.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+    margin-left: 15px;
+  }
+}
+.menu-burger {
+  display: none;
+}
+.menu-btn {
+  display: none;
+}
+
+
+@media (max-width: 1200px) {
+  .header {
+    padding-top: 36px;
+    padding-bottom: 46px;
+  }
+  .header__dropdowns span {
+    margin-right: 25px;
+  }
+  .logo-link img {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .header__dropdowns {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+
+    span, span::before, span::after {
+      position: absolute;
+      top: 50%;
+      margin-top: -1px;
+      left: 50%;
+      margin-left: -10px;
+      width: 20px;
+      height: 1px;
+      background-color: #d7b399;
+    }
+
+    span::before {
+      content: '';
+      transform: translateY(-5px);
+      margin-top: 0;
+      transition:  all 0.5s ease-in-out;
+    }
+    span::after {
+      content: '';
+      margin-top: 0;
+      transform: translateY(5px);
+      transition:  all 0.5s ease-in-out;
+    }
+
+  }
+  .menu-btn-active span::before {
+    transform: rotate(45deg);
+  }
+  .menu-btn-active span::after {
+    transform: rotate(-45deg);
+  }
+  .menu-btn-active span {
+    height: 0;
+  }
+
+
+  .menu-burger{
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-100%)
+  }
+  .menu-burger.menu-burger-active {
+    display: flex;
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 0;
+    top: 143px;
+    background-color: #f9f6f1;
+    z-index: 99;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(0%)
+  }
+
+  .menu__dropdowns {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .menu__dropdown {
+    position: relative;
+    font-family: $montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    transition: all 1s ease-in-out;
+    padding: 5px;
+  
+  }
+}
+
+
+
+
+
+@media (max-width: 576px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .logo-link {
+    margin: 0;
+    margin-bottom: 10px;
+    .logo-title {
+      margin: 0;
+    }
+  }
+  .header__menu {
+    margin: 0;
+    margin-bottom: 5px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .header__menu__link {
+      margin-right: 0px;
+    }
+  }
+  .header__bag {
+    .header__bag__count {
+      margin: 0;
+    }
+  }
+  .menu-burger.menu-burger-active {
+    display: flex;
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 0;
+    top: 180px;
+    background-color: #f9f6f1;
+    z-index: 99;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(0%)
+  }
+}
+
+
