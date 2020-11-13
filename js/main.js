@@ -21,3 +21,15 @@ menuDropdown.forEach(item => {
     this.classList.toggle('active');
   });
 });
+
+
+var mySwiper = new Swiper('.swiper-container', {
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  spaceBetween: 100,
+})

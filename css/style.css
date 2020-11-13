@@ -18,7 +18,8 @@ a {
   margin: 0 auto;
   padding: 0 20px;
 }
-.content .header__content {
+
+.header__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -239,7 +240,7 @@ a {
   }
 
   .menu-burger {
-    display: flex;
+    display: none;
     transition: all 0.5s ease-in-out;
     transform: translateX(-100%);
   }
@@ -264,6 +265,7 @@ a {
     justify-content: start;
     align-items: start;
     transition: all 1s ease-in-out;
+    z-index: 99;
   }
 
   .menu__dropdown {
@@ -274,6 +276,7 @@ a {
     letter-spacing: 0.03em;
     transition: all 1s ease-in-out;
     padding: 5px;
+    z-index: 99;
   }
 
   .menu__dropdown__content {
@@ -297,6 +300,7 @@ a {
     margin: 0;
     padding: 0;
     transition: all 0.3s ease-in-out;
+    white-space: nowrap;
   }
 
   .menu__dropdown__text.active {
@@ -395,6 +399,608 @@ a {
     padding-right: 20px;
     left: 0;
     top: 190px;
+  }
+}
+.sale-banner {
+  width: 100%;
+  background-color: #f9f6f1;
+  padding-top: 46px;
+  padding-bottom: 70px;
+  z-index: -1;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 100%;
+}
+
+.banner--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex-basis: 48%;
+}
+.banner--text h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.02em;
+  color: black;
+  margin: 0;
+  margin-bottom: 35px;
+}
+.banner--text h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 67px;
+  letter-spacing: 0.04em;
+  color: black;
+  margin: 0;
+  margin-bottom: 55px;
+  white-space: nowrap;
+}
+.banner--text button {
+  font-family: "Montserrat";
+  padding: 17px 30px;
+  border: none;
+  outline: none;
+  background-color: #d7b399;
+  text-transform: uppercase;
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+}
+
+.banner--img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+  background-image: url(../img/snickers/1.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
+  flex-basis: 50%;
+  height: 400px;
+}
+
+.banner--img--text {
+  display: flex;
+  flex-direction: column;
+}
+.banner--img--text span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: line-through;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: black;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.banner--img--text h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 51px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #d84033;
+  margin: 0;
+}
+
+.swiper-container {
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+.swiper-pagination-bullet {
+  width: 70px;
+  height: 7px;
+  border-radius: 0;
+  background-color: #cecece;
+}
+
+.swiper-pagination-bullet-active {
+  width: 70px;
+  height: 7px;
+  border-radius: 0;
+  background-color: #d7b399;
+}
+
+@media (max-width: 1200px) {
+  .banner--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-basis: 40%;
+  }
+  .banner--text h3 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    color: black;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  .banner--text h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 57px;
+    letter-spacing: 0.04em;
+    color: black;
+    margin: 0;
+    margin-bottom: 35px;
+  }
+  .banner--text button {
+    font-family: "Montserrat";
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    background-color: #d7b399;
+    text-transform: uppercase;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+  }
+
+  .banner--img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    background-image: url(../img/snickers/1.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: auto;
+    flex-basis: 55%;
+    height: 340px;
+  }
+
+  .banner--img--text {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner--img--text span {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: line-through;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: black;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .banner--img--text h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #d84033;
+    margin: 0;
+  }
+
+  .swiper-container {
+    padding-bottom: 70px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 50px;
+    height: 7px;
+    border-radius: 0;
+    background-color: #cecece;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #d7b399;
+  }
+}
+@media (max-width: 1010px) {
+  .banner--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-basis: 40%;
+  }
+  .banner--text h3 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    color: black;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  .banner--text h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.04em;
+    color: black;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  .banner--text button {
+    font-family: "Montserrat";
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    background-color: #d7b399;
+    text-transform: uppercase;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+  }
+
+  .banner--img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    background-image: url(../img/snickers/1.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: auto;
+    flex-basis: 59%;
+    height: 340px;
+  }
+
+  .banner--img--text {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner--img--text span {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: line-through;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: black;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .banner--img--text h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #d84033;
+    margin: 0;
+  }
+
+  .swiper-container {
+    padding-bottom: 70px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 50px;
+    height: 7px;
+    border-radius: 0;
+    background-color: #cecece;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #d7b399;
+  }
+}
+@media (max-width: 992px) {
+  .banner--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-basis: 35%;
+  }
+  .banner--text h3 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    color: black;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  .banner--text h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.04em;
+    color: black;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  .banner--text button {
+    font-family: "Montserrat";
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    background-color: #d7b399;
+    text-transform: uppercase;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+  }
+
+  .banner--img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    background-image: url(../img/snickers/1.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    flex-basis: 50%;
+    height: 300px;
+  }
+
+  .banner--img--text {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner--img--text span {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: line-through;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: black;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .banner--img--text h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #d84033;
+    margin: 0;
+  }
+
+  .swiper-container {
+    padding-bottom: 70px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 40px;
+    height: 7px;
+    border-radius: 0;
+    background-color: #cecece;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #d7b399;
+  }
+}
+@media (max-width: 768px) {
+  .banner--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-basis: 45%;
+  }
+  .banner--text h3 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    color: black;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .banner--text h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 0.04em;
+    color: black;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .banner--text button {
+    font-family: "Montserrat";
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    background-color: #d7b399;
+    text-transform: uppercase;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+  }
+
+  .banner--img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    background-image: url(../img/snickers/1.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    flex-basis: 50%;
+    height: 300px;
+  }
+
+  .swiper-container {
+    padding-bottom: 40px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 40px;
+    height: 7px;
+    border-radius: 0;
+    background-color: #cecece;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #d7b399;
+  }
+}
+@media (max-width: 576px) {
+  .banner--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-basis: 30%;
+  }
+  .banner--text h3 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: black;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .banner--text h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 38px;
+    letter-spacing: 0.04em;
+    color: black;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .banner--text button {
+    font-family: "Montserrat";
+    padding: 6px 6px;
+    border: none;
+    outline: none;
+    background-color: #d7b399;
+    text-transform: uppercase;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 12px;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+  }
+
+  .banner--img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    background-image: url(../img/snickers/1.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    flex-basis: 59%;
+    height: 200px;
+  }
+
+  .swiper-container {
+    padding-bottom: 20px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 40px;
+    height: 7px;
+    border-radius: 0;
+    background-color: #cecece;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #d7b399;
+  }
+
+  .banner--img--text {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner--img--text span {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: line-through;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: black;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .banner--img--text h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #d84033;
+    margin: 0;
   }
 }
 
