@@ -993,3 +993,699 @@ a {
     }
   }
 }
+// SALE BANNER STYLES END
+
+.free-delivery {
+  width: 100%;
+  padding: 70px 0;
+  background-color: #212121;
+}
+.free-delivery__content--block {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  h1 {
+    text-transform: uppercase;
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: white;
+    margin: 0;
+    margin-bottom: 20px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+  .bold-text {
+    font-weight: bold;
+  }
+  p {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 21px;
+    line-height: 26px;
+    color: white;
+    margin: 0;
+  }
+}
+@media (max-width: 769px) {
+  .free-delivery {
+    width: 100%;
+    padding: 50px 0;
+  }
+  .free-delivery__content--block {
+  
+    h1 {
+      text-transform: uppercase;
+      font-family: $montserrat;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: white;
+      margin: 0;
+      margin-bottom: 10px;
+      white-space: nowrap;
+    }
+    .bold-text {
+      font-weight: bold;
+    }
+    p {
+      font-family: $montserrat;
+      font-style: normal;
+      font-weight: lighter;
+      font-size: 16px;
+      line-height: 24px;
+      color: white;
+      margin: 0;
+      white-space: nowrap;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .free-delivery {
+    width: 100%;
+    padding: 30px 0;
+  }
+  .free-delivery__content--block {
+  
+    h1 {
+      text-transform: uppercase;
+      font-family: $montserrat;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: white;
+      margin: 0;
+      margin-bottom: 7px;
+      white-space: nowrap;
+    }
+    .bold-text {
+      font-weight: bold;
+    }
+    p {
+      font-family: $montserrat;
+      font-style: normal;
+      font-weight: lighter;
+      font-size: 12px;
+      line-height: 16px;
+      color: white;
+      margin: 0;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .free-delivery {
+    width: 100%;
+    padding: 30px 0;
+  }
+  .free-delivery__content--block {
+  
+    h1 {
+      text-transform: uppercase;
+      font-family: $montserrat;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: white;
+      margin: 0;
+      margin-bottom: 7px;
+      white-space: nowrap;
+    }
+    .bold-text {
+      font-weight: bold;
+    }
+    p {
+      font-family: $montserrat;
+      font-style: normal;
+      font-weight: lighter;
+      font-size: 12px;
+      line-height: 16px;
+      color: white;
+      margin: 0;
+      white-space: nowrap;
+    }
+  }
+}
+
+// collections
+.collections {
+  width: 100%;
+  background: linear-gradient(90deg, rgba(249,246,241,1) 46%, rgba(244,244,244,1) 55%);
+}
+.coll-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.men-coll {
+  flex-basis: 50%;
+  background-color: #f9f6f1;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  padding-top: 60px;
+  padding-left: 36px;
+  margin-left: auto;
+}
+.men-coll-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.women-coll {
+  flex-basis: 50%;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding-top: 60px;
+  padding-left: 36px;
+  margin-right: auto;
+}
+.women-coll-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.women-coll-img, .men-coll-img {
+  padding: 0;
+}
+.collection--title {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  color: black;
+  margin: 0;
+  margin-bottom: 25px;
+  white-space: nowrap;
+}
+.collection--description {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: black;
+  text-decoration: none;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.collection-button {
+  width: 80px;
+  height: 30px;
+  background-color: #d7b399;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover img {
+    transition: all 0.3s ease-in-out;
+    z-index: 99;
+    transform: scale(1.5);
+  }
+}
+
+@media (max-width: 1200px) {
+  .coll-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  
+  .men-coll {
+    flex-basis: 50%;
+    background-color: #f9f6f1;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    padding-top: 40px;
+    padding-left: 26px;
+    padding-right: 15px;
+  }
+  .men-coll-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-basis: 60%;
+  }
+  .women-coll {
+    flex-basis: 50%;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-top: 40px;
+    padding-left: 26px;
+    padding-right: 15px;
+  }
+  .women-coll-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .women-coll-img, .men-coll-img {
+    padding: 0;
+    width: 170px;
+    height: 150px;
+  }
+  .collection--title {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: black;
+    margin: 0;
+    margin-bottom: 15px;
+    white-space: nowrap;
+  }
+  .collection--description {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    text-decoration: none;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .collection-button {
+    width: 80px;
+    height: 30px;
+    background-color: #d7b399;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  
+    &:hover img {
+      transition: all 0.3s ease-in-out;
+      z-index: 99;
+      transform: scale(1.5);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  
+  .men-coll {
+    flex-basis: 50%;
+    background-color: #f9f6f1;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+  .men-coll-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-basis: 60%;
+  }
+  .women-coll {
+    flex-basis: 50%;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+  .women-coll-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-basis: 60%;
+  }
+  .women-coll-img, .men-coll-img {
+    padding: 0;
+    width: 150px;
+    height: 130px;
+  }
+  .collection--title {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: black;
+    margin: 0;
+    margin-bottom: 10px;
+    white-space: nowrap;
+  }
+  .collection--description {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    text-decoration: none;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .collection-button {
+    width: 60px;
+    height: 20px;
+    background-color: #d7b399;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  
+    &:hover img {
+      transition: all 0.3s ease-in-out;
+      z-index: 99;
+      transform: scale(1.5);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .collections {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(244,244,244,1) 50%, rgba(249,246,241,1) 50%);
+  }
+  .coll-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+    
+  .men-coll {
+    flex-basis: 50%;
+    background-color: #f9f6f1;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+  .men-coll-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-basis: 60%;
+  }
+  .women-coll {
+    flex-basis: 50%;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+  .women-coll-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-basis: 60%;
+  }
+  .women-coll-img, .men-coll-img {
+    padding: 0;
+    width: 150px;
+    height: 130px;
+  }
+  .collection--title {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: black;
+    margin: 0;
+    margin-bottom: 10px;
+    white-space: nowrap;
+  }
+  .collection--description {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    text-decoration: none;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .collection-button {
+    width: 60px;
+    height: 20px;
+    background-color: #d7b399;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  
+    &:hover img {
+      transition: all 0.3s ease-in-out;
+      z-index: 99;
+      transform: scale(1.5);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .collections {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(244,244,244,1) 50%, rgba(249,246,241,1) 50%);
+  }
+  .coll-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+    
+  .men-coll {
+    flex-basis: 50%;
+    background-color: #f9f6f1;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    padding-top: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0;
+  }
+  .men-coll-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-basis: 60%;
+  }
+  .women-coll {
+    flex-basis: 50%;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-top: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .women-coll-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-basis: 60%;
+  }
+  .women-coll-img, .men-coll-img {
+    padding: 0;
+    width: 150px;
+    height: 130px;
+  }
+  .collection--title {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: black;
+    margin: 0;
+    margin-bottom: 10px;
+    white-space: nowrap;
+  }
+  .collection--description {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    text-decoration: none;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .collection-button {
+    width: 60px;
+    height: 20px;
+    background-color: #d7b399;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  
+    &:hover img {
+      transition: all 0.3s ease-in-out;
+      z-index: 99;
+      transform: scale(1.5);
+    }
+  }
+}
+@media (max-width: 365px) {
+  .collections {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(244,244,244,1) 50%, rgba(249,246,241,1) 50%);
+  }
+  .coll-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+    
+  .men-coll {
+    flex-basis: 50%;
+    background-color: #f9f6f1;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: end;
+    padding-top: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0;
+  }
+  .men-coll-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-basis: 60%;
+  }
+  .women-coll {
+    flex-basis: 50%;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+    padding-top: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .women-coll-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-basis: 60%;
+  }
+  .women-coll-img, .men-coll-img {
+    padding: 0;
+    width: 130px;
+    height: 115px;
+  }
+  .collection--title {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: black;
+    margin: 0;
+    margin-bottom: 7px;
+    white-space: nowrap;
+  }
+  .collection--description {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 24px;
+    color: black;
+    text-decoration: none;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .collection-button {
+    width: 40px;
+    height: 20px;
+    background-color: #d7b399;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  
+    &:hover img {
+      transition: all 0.3s ease-in-out;
+      z-index: 99;
+      transform: scale(1.5);
+    }
+  }
+}
+
+
+// collections end
