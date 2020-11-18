@@ -1745,6 +1745,12 @@ a {
   align-items: flex-end;
   margin: 0;
   padding: 0;
+  transition: all 0.7s ease-in-out;
+}
+
+.dress:hover {
+  transform: rotate(360deg);
+  z-index: 99;
 }
 
 .dress--text {
@@ -1759,6 +1765,122 @@ a {
   letter-spacing: 0.03em;
   color: black;
   text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .dress--text {
+    margin-left: 10px;
+    margin-bottom: 14px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 992px) {
+  .dress--text {
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 769px) {
+  .dress {
+    background-position: center;
+    background-size: cover;
+    flex-basis: 33%;
+    height: 192px;
+  }
+
+  .dress:last-child {
+    margin-left: auto;
+    background-size: contain;
+  }
+
+  .dress--text {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .dress {
+    background-size: cover;
+    flex-basis: 50%;
+    height: 180px;
+  }
+
+  .dress:last-child {
+    background-size: cover;
+  }
+
+  .dress--text {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media (max-width: 425px) {
+  .dress {
+    background-size: cover;
+    background-position: right 10px;
+    flex-basis: 49%;
+    height: 150px;
+    margin: 1px;
+  }
+
+  .dress:last-child {
+    background-size: cover;
+    margin: 1px;
+  }
+
+  .dress--text {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media (max-width: 375px) {
+  .dress {
+    background-size: contain;
+    background-position: right 10px;
+    flex-basis: 50%;
+    height: 130px;
+    margin: 0;
+  }
+
+  .dress:last-child {
+    background-size: contain;
+  }
+
+  .dress--text {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media (max-width: 320px) {
+  .dress {
+    background-size: cover;
+    background-position: right 10px;
+    flex-basis: 50%;
+    height: 110px;
+    margin: 0;
+  }
+
+  .dress:last-child {
+    background-size: contain;
+  }
+
+  .dress--text {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-size: 11px;
+    line-height: 13px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
