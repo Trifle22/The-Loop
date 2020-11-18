@@ -1721,5 +1721,44 @@ a {
     transform: scale(1.5);
   }
 }
+.dresses {
+  width: 100%;
+  padding-bottom: 150px;
+}
+
+.dresses__block {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.dress {
+  background: transparent url(../img/dress.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  flex-basis: 25%;
+  height: 235px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.dress--text {
+  margin: 0;
+  margin-left: 20px;
+  margin-bottom: 24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 21px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: black;
+  text-transform: uppercase;
+}
 
 /*# sourceMappingURL=style.css.map */
