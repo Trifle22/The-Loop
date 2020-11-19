@@ -467,13 +467,14 @@ button {
 
 .banner--img {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: start;
   background-image: url(../img/snickers/1.png);
   background-repeat: no-repeat;
   background-position: left;
   background-size: auto;
   flex-basis: 50%;
+  max-width: 50%;
   height: 400px;
 }
 
