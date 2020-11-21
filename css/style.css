@@ -1904,6 +1904,7 @@ button {
 }
 .new-models {
   width: 100%;
+  padding-bottom: 100px;
 }
 
 .new-models--title {
@@ -2390,6 +2391,114 @@ button {
   }
   .btn-all-models:hover img {
     transform: translateX(10px);
+  }
+}
+.get-presents {
+  width: 100%;
+  background-color: black;
+  padding: 70px 0;
+}
+
+.get-presents__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.get-presents--title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  color: white;
+  flex-basis: 45%;
+  text-transform: uppercase;
+  margin-right: 50px;
+}
+
+.get-presents--form {
+  display: flex;
+  align-items: center;
+}
+.get-presents--form input {
+  padding-left: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  background-color: #f9f6f1;
+  border: none;
+  outline: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  margin-right: 45px;
+}
+.get-presents--form button {
+  padding: 13px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+  background-color: #d7b399;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 1200px) {
+  .get-presents__block {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  .get-presents--title {
+    margin-right: 30px;
+    font-size: 25px;
+    margin-right: 0;
+  }
+
+  .get-presents--form input {
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .get-presents--form button {
+    padding: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .get-presents--title {
+    margin-right: 0;
+    font-size: 20px;
+  }
+}
+@media (max-width: 424px) {
+  .get-presents--title {
+    font-size: 18px;
+  }
+
+  .get-presents--form {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .get-presents--form input {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 321px) {
+  .get-presents--title {
+    font-size: 14px;
   }
 }
 
